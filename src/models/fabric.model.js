@@ -1,6 +1,6 @@
 import mongoose, { Schema } from 'mongoose';
 
-const productMasterSchema = new Schema({
+const fabricSchema = new Schema({
   division: {
     type: String,
     required: true,
@@ -67,4 +67,4 @@ const productMasterSchema = new Schema({
   },
 });
 
-export const ProductMaster = mongoose.model('ProductMaster', productMasterSchema);
+export const Fabric = mongoose.model('Fabric', fabricSchema);

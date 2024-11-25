@@ -1,6 +1,6 @@
 import mongoose, { Schema } from 'mongoose';
 
-const productMasterSchema = new Schema({
+const packingSchema = new Schema({
   skuNo: {
     type: String,
     required: true,
@@ -45,10 +45,6 @@ const productMasterSchema = new Schema({
     type: String,
     required: true,
   },
-  pattern: {
-    type: String,
-    required: true,
-  },
   type: {
     type: String,
     required: true,
@@ -83,4 +79,4 @@ const productMasterSchema = new Schema({
   },
 });
 
-export const ProductMaster = mongoose.model('ProductMaster', productMasterSchema);
+export const Packing = mongoose.model('Packing', packingSchema);

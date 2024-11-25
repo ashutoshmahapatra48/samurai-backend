@@ -1,6 +1,6 @@
 import mongoose, { Schema } from 'mongoose';
 
-const productMasterSchema = new Schema({
+const accessoriesSchema = new Schema({
   skuNo: {
     type: String,
     required: true,
@@ -79,4 +79,4 @@ const productMasterSchema = new Schema({
   },
 });
 
-export const ProductMaster = mongoose.model('ProductMaster', productMasterSchema);
+export const Accessories = mongoose.model('Accessories', accessoriesSchema);
